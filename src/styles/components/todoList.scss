@@ -1,0 +1,36 @@
+.todoList {
+	display: flex;
+	flex-direction: column;
+	color: rgba(0, 0, 0, 1);
+
+	&__task {
+		margin-bottom: 5px;
+		padding: 5px;
+		background: aliceblue;
+		border-bottom: 1px solid aliceblue;
+	}
+
+	&__task-title {
+		font-size: 18px;
+		margin-bottom: 5px;
+	}
+
+	&__info {
+		display: flex;
+		font-size: 12px;
+	}
+
+	&__btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-left: auto;
+		font-size: 16px;
+
+		&:hover {
+			cursor: pointer;
+			scale: 1.1;
+			transition: all 0.2s ease-in-out;
+		}
+	}
+}

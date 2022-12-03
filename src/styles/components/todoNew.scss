@@ -1,0 +1,72 @@
+.todo {
+	margin-bottom: 10px;
+
+	&__input {
+		display: block;
+		padding: 15px 10px;
+		margin-bottom: 15px;
+		width: 30vw;
+		font-size: 20px;
+		color: rgba(0, 0, 0, 1);
+		background: aliceblue;
+		border: 2px solid aliceblue;
+
+		&::placeholder {
+			color: rgba(0, 0, 0, .5);
+		}
+	}
+
+	&__deadline {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+
+	}
+
+	.react-date-picker {
+		width: fit-content;
+
+		&__wrapper {
+			border: 1px solid lavenderblush;
+			background-color: lavenderblush;
+		}
+
+		&__inputGroup {
+			padding: 10px 15px;
+		}
+
+		&__button {
+			padding: 10px;
+			background: rgba(255, 255, 255, 1);
+
+			svg {
+				transition: all 0.2s ease-in-out;
+			}
+
+			&:enabled:hover,
+			&:enabled:focus {
+				svg {
+					stroke: rgba(0, 0, 0, 1);
+				}
+			}
+		}
+	}
+
+	&__btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 2px solid transparent;
+		font-size: 35px;
+		color: rgba(0, 0, 0, 1);
+		background: rgba(255, 255, 255, 1);
+
+		&:hover,
+		&:focus {
+			cursor: pointer;
+			scale: 1.1;
+			transition: all 0.2s ease-in-out;
+		}
+	}
+}
